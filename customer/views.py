@@ -18,3 +18,8 @@ def home(request):
             return redirect('home')
     else:
         return render(request, 'home.html', {})
+
+def logout_user(request):
+    logout(request)
+    messages.success(request, "You have been logged out...")
+    return redirect('home')
