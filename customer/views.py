@@ -51,3 +51,13 @@ def customer_detail(request, pk):
     else:
         messages.success(request, "You must log in...")
         return redirect('home')
+    
+def customer_delete(request, pk):
+    if request.user.is_authenticated:
+        customer = Record.objects.get(id=pk)
+        customer.delete()
+        messages.success(request, "The customer's records has been deleted...")
+        return redirect('home')
+    else:
+        messages.success(request, "You must log in...")
+        return redirect('home')
