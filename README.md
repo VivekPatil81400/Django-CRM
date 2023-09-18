@@ -5,7 +5,7 @@ User Authentication: Secure user authentication and authorization system.
 Customer Management: Easily add, edit, and delete customer information.
 
 **Clone the repository:**
-git clone https://github.com/your-username/[django-crm.git](https://github.com/VivekPatil81400/Django-CRM.git)
+git clone https://github.com/VivekPatil81400/Django-CRM.git
 
 **Create a virtual environment:**
 
